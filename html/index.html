@@ -14,12 +14,16 @@
 		<div class="header_inner">
 			<div class="header_logo">MoGo</div>
             <nav class="nav"><link rel="preconnect" href="https://fonts.gstatic.com">
-            	<a class="nav_link" href="#">ABOUT</a>
-            	<a class="nav_link" href="#">SERVICE</a>
-            	<a class="nav_link" href="#">WORK</a>
-            	<a class="nav_link" href="#">BLOG</a>
-            	<a class="nav_link" href="#">CONTACT</a>
+            	<a class="nav_link" href="#section_about" data-scroll=".section_about">ABOUT</a>
+            	<a class="nav_link" href="#" data-scroll=".section_work">WORK</a>
+                <a class="nav_link" href="#" data-scroll=".section__service">SERVICE</a>
+            	<a class="nav_link" href="#" data-scroll=".section_latest-blog">BLOG</a>
+            	<a class="nav_link" href="#" data-scroll=".container__conclusion">CONTACT</a>
             </nav>
+
+            <button class="burger hide">
+                <div class="nav_item"></div>
+            </button>
 		</div>
 	</div>
 </header>
@@ -41,28 +45,28 @@
 			<div class="slider_inner">
 				<div class="slider_item active">
 					<span class="slider_num">01</span>
-					Intro
+					<span class="slider_word">Intro</span>
 				</div>
 
 				<div class="slider_item">
 					<span class="slider_num">02</span>
-					Work
+					<span class="slider_word">Work</span>
 				</div>
 
 				<div class="slider_item">
 					<span class="slider_num">03</span>
-					About
+					<span class="slider_word">About</span>
 				</div>
 
 				<div class="slider_item">
 					<span class="slider_num">04</span>
-					Contacts
+					<span class="slider_word">Contacts</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="section"> 
+	<div class="section section_about" id="section_about"> 
 		<div class="container">
 			<div class="section_header">
 				<h3 class="section_suptitle">What we do</h3>
@@ -131,7 +135,7 @@
 		</div>
 	</div> <!-- container -->
 
-    <div class="section"> 
+    <div class="section section_work" id="section_work"> 
 		<div class="container">
 			<div class="section_header">
 				<h3 class="section_suptitle">We work with</h3>
@@ -178,7 +182,7 @@
         </div>
     </div>  
     
-    <div class="section section_devices"> 
+    <div class="section section_devices" id="section_devices"> 
 		<div class="container">
 			<div class="section_header">
 				<h3 class="section_suptitle">For all devices</h3>
@@ -191,7 +195,7 @@
         </div>
     </div> 
     
-    <div class="section section__service"> 
+    <div class="section section__service" id="section__service"> 
 		<div class="container">
 			<div class="section_header">
 				<h3 class="section_suptitle">Service</h3>
@@ -206,15 +210,17 @@
                 <div class="what-we-do__items">
                     <div class="what-we-do__item">
                         <div class="what-we-do__title">
-                            <div class="what-we-do__title-wrap">
+                            <div class="what-we-do__title-wrap" data-collapse="#we-do-1">
                                 <img src="../images/service/01.png" alt="">
                                 <div class="what-we-do__title-text">
                                     Photography
                                 </div>
-                                <img class="cursor" src="../images/service/cursor.png" alt="">
+                                <div class="cursor"></div>
                             </div>
-                            <div class="what-we-do__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div class="what-we-do__text hide {
+                                display: none;
+                            }" id="we-do-1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="forafter"></div>
                             </div>
                             
@@ -223,23 +229,30 @@
 
                     <div class="what-we-do__item">
                         <div class="what-we-do__title">
-                            <div class="what-we-do__title-wrap">
-                                <img src="../images/service/02.png" alt="">
+                            <div class="what-we-do__title-wrap" data-collapse="#we-do-2">
+                                <img src="../images/service/02.png" alt="2">
                                 <div class="what-we-do__title-text">
                                     creativity
                                 </div>
+                                <div class="cursor"></div>
+                            </div>
+                            <div class="what-we-do__text hide" id="we-do-2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>   
                     </div>
 
                     <div class="what-we-do__item">
                         <div class="what-we-do__title">
-                            <div class="what-we-do__title-wrap">
+                            <div class="what-we-do__title-wrap" data-collapse="#we-do-3">
                                 <img src="../images/service/03.png" alt="">
                                 <div class="what-we-do__title-text">
                                     web design
                                 </div>
-                                <img class="cursor" src="../images/service/cursor.png" alt="">
+                                <div class="cursor"></div>
+                            </div>
+                            <div class="what-we-do__text hide" id="we-do-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>   
                     </div>
@@ -248,8 +261,8 @@
             </div>  
         </div>
 
-        <div class="comments_wrap">
-            <div class="container">
+        <div class="container container_comments">
+            <div class="comments_wrap">
                 <div class="comments">
                     <img class="comments__icon" src="../images/service/04.png" alt="">
                     <div class="comments__text-wrap">
@@ -259,7 +272,6 @@
                         <div class="person">
                             Jon Doe
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -276,25 +288,27 @@
                 <div class="our-team-persons">
                     <div class="our-team-persons__photos">
                         <div class="our-teams-persons__item">
-                            <div class="our-team__img">
-                                <img src="../images/our team/01.png" alt="1">
-                                <div class="our-team-social">
-                                    <div class="our-team-social_wrap">
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-facebook-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-twitter-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-pinterest-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-instagram-square"></i>
-                                        </a>
+                            <div class="our-teams-persons__substrate">
+                                <div class="our-team__img">
+                                    <img src="../images/our team/01.png" alt="1">
+                                    <div class="our-team-social">
+                                        <div class="our-team-social_wrap">
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-pinterest-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-instagram-square"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                           
                             <div class="our-teams-persons__wrap">
                                 <div class="our-teams-persons__sign-item">
                                     Matthew Dix
@@ -303,23 +317,26 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="our-teams-persons__item">
-                            <div class="our-team__img">
-                                <img src="../images/our team/02.jpg" alt="1">
-                                <div class="our-team-social">
-                                    <div class="our-team-social_wrap">
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-facebook-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-twitter-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-pinterest-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-instagram-square"></i>
-                                        </a>
+                            <div class="our-teams-persons__substrate">
+                                <div class="our-team__img">
+                                    <img src="../images/our team/02.jpg" alt="2">
+                                    <div class="our-team-social">
+                                        <div class="our-team-social_wrap">
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-pinterest-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-instagram-square"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -331,23 +348,26 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="our-teams-persons__item">
-                            <div class="our-team__img">
-                                <img src="../images/our team/03.jpg" alt="1">
-                                <div class="our-team-social">
-                                    <div class="our-team-social_wrap">
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-facebook-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-twitter-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-pinterest-square"></i>
-                                        </a>
-                                        <a class="our-team-social-item">
-                                            <i class="fab fa-instagram-square"></i>
-                                        </a>
+                            <div class="our-teams-persons__substrate">
+                                <div class="our-team__img">
+                                    <img src="../images/our team/03.jpg" alt="3">
+                                    <div class="our-team-social">
+                                        <div class="our-team-social_wrap">
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-pinterest-square"></i>
+                                            </a>
+                                            <a class="our-team-social-item">
+                                                <i class="fab fa-instagram-square"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -387,425 +407,411 @@
                     </div>
                 </div>
             </div>
-        </div> 
-
-        <div class="section section_our-work"> <!--our work-->
-            <div class="container">
-                <div class="section_header">
-                    <h3 class="section_suptitle">What we do</h3>
-                    <h2 class="section_title">some of our work</h2>
-                    <span class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
-                </div>
-            </div>
-            <div class="our-work-photos">
-                <div class="our-work-photos__wrap__first4">
-                    <img class="our-work-img" src="../images/our work/01.png" alt="1">
-                    <img class="our-work-img" src="../images/our work/02.png" alt="2">
-                    <img class="our-work-img" src="../images/our work/03.png" alt="3">
-                    <img class="our-work-img" src="../images/our work/04.png" alt="4">
-                </div>
-                <div class="our-work-photos__wrap__second4">
-                    <img class="our-work-img" src="../images/our work/05.png" alt="5">
-                    <img class="our-work-img our-work-img__img6" src="../images/our work/06.png" alt="6">
-                    <img class="our-work-img our-work-img__img7" src="../images/our work/07.png" alt="7">
-                    <img class="our-work-img" src="../images/our work/08.jpg" alt="8">
-                </div>
-            <div class="container">
-                <div class="comments_wrap">
-                    <div class="container">
-                        <div class="comments">
-                            <img class="comments__icon" src="../images/service/04.png" alt="">
-                            <div class="comments__text-wrap">
-                                <div class="comment">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                                </div>
-                                <div class="person">
-                                    Joshua Earle
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!--what people say-->
-        <div class="section section__what-people-say">
-            <div class="container">
-                <div class="section_header">
-                    <h3 class="section_suptitle">Happy Clients</h3>
-                    <h2 class="section_title">What people say</h2>
-                </div>
-                <div class="what-people-say__people__wrap">                
-                    <div class="what-people-say__card">
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__photo">
-                                <img src="../images/our clients/01.png" alt="1">
-                            </div>
-                        </div>
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__text-block">
-                                <div class="what-people-say__name">
-                                    Matthew Dix
-                                </div>
-                                <div class="what-people-say__profession">
-                                    Graphic Design
-                                </div>
-                                <div class="what-people-say__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div> 
 
-                    <div class="what-people-say__card">
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__photo">
-                                <img src="../images/our clients/02.png" alt="1">
-                            </div>
-                        </div>
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__text-block">
-                                <div class="what-people-say__name">
-                                    Nick Karvounis
-                                </div>
-                                <div class="what-people-say__profession">
-                                    Graphic Design
-                                </div>
-                                <div class="what-people-say__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="what-people-say__card">
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__photo">
-                                <img src="../images/our clients/03.png" alt="1">
-                            </div>
-                        </div>
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__text-block">
-                                <div class="what-people-say__name">
-                                    Jaelynn Castillo 
-                                </div>
-                                <div class="what-people-say__profession">
-                                    Graphic Design
-                                </div>
-                                <div class="what-people-say__text">
-                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="what-people-say__card">
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__photo">
-                                <img src="../images/our clients/04.png" alt="1">
-                            </div>
-                        </div>
-                        <div class="what-people-say__card-wrap">
-                            <div class="what-people-say__text-block">
-                                <div class="what-people-say__name">
-                                    Mike Petrucci
-                                </div>
-                                <div class="what-people-say__profession">
-                                    Graphic Design
-                                </div>
-                                <div class="what-people-say__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-<!--latest blog-->
-        <div class="section section_latest-blog"> 
-            <div class="container">
-                <div class="section_header">
-                    <h3 class="section_suptitle">Our stories</h3>
-                    <h2 class="section_title">Latest blog</h2>
-                </div>
-
-                <div class="blog-items">
-                    <div class="blog-items__item">
-                        <div class="blog-items__img-wrap">
-                            <img src="../images/blog/01.png" alt="">
-                            <div class="blog-data">
-                                15 
-                            <span class="blog-data-month">Jan</span>
-                            </div>
-                        </div>
-                        <div class="blog-items__title">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div class="blog-items__text">
-                            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <hr class="blog-items-h">
-                        <div class="blog-items__block-info">
-                            <div class="blog-items__view">
-                                <div class="blog-items__icon">
-                                    <img src="../images/blog/view.png" alt="">
-                                </div>
-                                <div class="blog-items__quantity">
-                                    542
-                                </div>
-                            </div>
-                            <div class="blog-items__comments">
-                                <div class="blog-items__icon">
-                                    <img src="../images/blog/comment.png" alt="">
-                                </div>
-                                <div class="blog-items__quantity">
-                                    17
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="blog-items__item">
-                        <div class="blog-items__img-wrap">
-                            <img src="../images/blog/02.png" alt="">
-                            <div class="blog-data">
-                                14 
-                            <span class="blog-data-month">Jan</span>
-                            </div>
-                        </div>
-                        <div class="blog-items__title">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div class="blog-items__text">
-                            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <hr class="blog-items-h">
-                        <div class="blog-items__block-info">
-                            <div class="blog-items__view">
-                                <div class="blog-items__icon">
-                                    <img src="../images/blog/view.png" alt="">
-                                </div>
-                                <div class="blog-items__quantity">
-                                    992
-                                </div>
-                            </div>
-                            <div class="blog-items__comments">
-                                <div class="blog-items__icon">
-                                    <img src="../images/blog/comment.png" alt="">
-                                </div>
-                                <div class="blog-items__quantity">
-                                    42
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="blog-items__item">
-                        <div class="blog-items__img-wrap">
-                            <img src="../images/blog/01.png" alt="">
-                            <div class="blog-data">
-                                12
-                            <span class="blog-data-month">Jan</span>
-                            </div>
-                        </div>
-                        <div class="blog-items__title">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div class="blog-items__text">
-                            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <hr class="blog-items-h">
-                        <div class="blog-items__block-info">
-                            <div class="blog-items__view">
-                                <div class="blog-items__icon">
-                                    <img src="../images/blog/view.png" alt="">
-                                </div>
-                                <div class="blog-items__quantity">
-                                    1560
-                                </div>
-                            </div>
-                            <div class="blog-items__comments">
-                                <div class="blog-items__icon">
-                                    <img src="../images/blog/comment.png" alt="">
-                                </div>
-                                <div class="blog-items__quantity">
-                                    98
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>               
-            </div>
-        </div>  
-
-        <div class="open-map"></div>
-        <!--Conclusion-->
+    <div class="section section_our-work" id="section_our-work"> <!--our work-->
         <div class="container">
-            <div class="conclusion">
-                <div class="col_wrap col_wrap__mogo">
-                    <div class="col__mogo">
-                        <div class="col__mogo__title">
-                            MoGo
-                        </div>
-                        <div class="col__mogo__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        </div>
-                        <div class="col__mogo__followers">
-                            <div class="col__mogo__quantity">
-                                15k
+            <div class="section_header">
+                <h3 class="section_suptitle">What we do</h3>
+                <h2 class="section_title">some of our work</h2>
+                <span class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+            </div>
+        </div>
+        <div class="our-work-photos">
+            <div class="our-work-photos__wrap__first4">
+                <img class="our-work-img" src="../images/our work/01.png" alt="1">
+                <img class="our-work-img" src="../images/our work/02.png" alt="2">
+                <img class="our-work-img" src="../images/our work/03.png" alt="3">
+                <img class="our-work-img" src="../images/our work/04.png" alt="4">
+            </div>
+            <div class="our-work-photos__wrap__second4">
+                <img class="our-work-img" src="../images/our work/05.png" alt="5">
+                <img class="our-work-img our-work-img__img6" src="../images/our work/06.png" alt="6">
+                <img class="our-work-img our-work-img__img7" src="../images/our work/07.png" alt="7">
+                <img class="our-work-img" src="../images/our work/08.jpg" alt="8">
+            </div>
+        <div class="container container__our-work">
+            <div class="comments_wrap">
+                <div class="container">
+                    <div class="comments">
+                        <img class="comments__icon" src="../images/service/04.png" alt="">
+                        <div class="comments__text-wrap">
+                            <div class="comment">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                             </div>
-                            followers
-                        </div>
-                        <hr class="col__mogo-h">
-                        <div class="col__mogo__follow-us">
-                            <div class="follow-us__wrap follow-us__wrap__text">
-                                <div class="folow-us__text">Follow Us:</div>
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_01.jpg" alt="1" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_02.jpg" alt="2" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_03.jpg" alt="3" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_04.jpg" alt="4" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_05.jpg" alt="5" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_06.jpg" alt="6" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_07.jpg" alt="7" class="follow-us__img">
-                            </div>
-                            <div class="follow-us__wrap">
-                                <img src="../images/conclusion/icon_08.jpg" alt="8" class="follow-us__img">
+                            <div class="person">
+                                Joshua Earle
                             </div>
                         </div>
-                        <form class="col__mogo__form">
-                            <div class="col__mogo__form-wrap">
-                                <input type="text" placeholder="Your Email..." class="col__mogo__form__input">
-                            </div>
-                            <div class="col__mogo__form-wrap">
-                                <button class="col__mogo__form__button">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col_wrap col_wrap__blogs">
-                    <div class="col__blogs-title">
-                        Blogs
-                    </div>
-                    <div class="col__blogs">
-                        <div class="col__blogs_item">
-                            <div class="col__blogs_item-wrap">
-                                <div class="col__blogs-pic">
-                                    <img src="../images/conclusion/01.jpg" alt="1">
-                                </div>
-                            </div>
-                            <div class="col__blogs_item-wrap">
-                                <div class="col__blogs-text">
-                                    Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing
-                                </div>
-                                <div class="col__blogs-date">
-                                    Jan 9, 2016
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="col__blogs_item">
-                            <div class="col__blogs_item-wrap">
-                                <div class="col__blogs-pic">
-                                    <img src="../images/conclusion/02.jpg" alt="2">
-                                </div>
-                            </div>
-                            <div class="col__blogs_item-wrap">
-                                <div class="col__blogs-text">
-                                    Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing
-                                </div>
-                                <div class="col__blogs-date">
-                                    Jan 9, 2016
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col__blogs_item">
-                            <div class="col__blogs_item-wrap">
-                                <div class="col__blogs-pic">
-                                    <img src="../images/conclusion/03.jpg" alt="3">
-                                </div>
-                            </div>
-                            <div class="col__blogs_item-wrap">
-                                <div class="col__blogs-text">
-                                    Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing
-                                </div>
-                                <div class="col__blogs-date">
-                                    Jan 9, 2016
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col_wrap col_wrap__instagram">
-                    <div class="col__blogs-title">
-                        Instagram
-                    </div>
-                    <div class="col__instagram__item">
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/1.jpg" alt="1">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/2.jpg" alt="2">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/3.jpg" alt="3">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/4.jpg" alt="4">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/5.jpg" alt="6">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/6.jpg" alt="6">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/7.jpg" alt="7">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/8.jpg" alt="8">
-                        </div>
-                        <div class="col__instagram-wrap">
-                            <img src="../images/conclusion/9.jpg" alt="9">
-                        </div>
-                    </div>
-                    <div class="col__instagram_view">
-                        view more photos
                     </div>
                 </div>
             </div>
-            <hr class="conclusion__hr">
-            <div class="footer__text">2021 MoGo</div>
         </div>
+    </div>
+    <!--what people say-->
+    <div class="section section__what-people-say">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_suptitle">Happy Clients</h3>
+                <h2 class="section_title">What people say</h2>
+            </div>
+            <div class="what-people-say__people__wrap">                
+                <div class="what-people-say__card">
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__photo">
+                            <img src="../images/our clients/01.png" alt="1">
+                        </div>
+                    </div>
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__text-block">
+                            <div class="what-people-say__name">
+                                Matthew Dix
+                            </div>
+                            <div class="what-people-say__profession">
+                                Graphic Design
+                            </div>
+                            <div class="what-people-say__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="what-people-say__card">
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__photo">
+                            <img src="../images/our clients/02.png" alt="1">
+                        </div>
+                    </div>
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__text-block">
+                            <div class="what-people-say__name">
+                                Nick Karvounis
+                            </div>
+                            <div class="what-people-say__profession">
+                                Graphic Design
+                            </div>
+                            <div class="what-people-say__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="what-people-say__card">
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__photo">
+                            <img src="../images/our clients/03.png" alt="1">
+                        </div>
+                    </div>
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__text-block">
+                            <div class="what-people-say__name">
+                                Jaelynn Castillo 
+                            </div>
+                            <div class="what-people-say__profession">
+                                Graphic Design
+                            </div>
+                            <div class="what-people-say__text">
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                            </div> 
+                        </div>
+                    </div>
+                </div>      
+                <div class="what-people-say__card">
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__photo">
+                            <img src="../images/our clients/04.png" alt="1">
+                        </div>
+                    </div>
+                    <div class="what-people-say__card-wrap">
+                        <div class="what-people-say__text-block">
+                            <div class="what-people-say__name">
+                                Mike Petrucci
+                            </div>
+                            <div class="what-people-say__profession">
+                                Graphic Design
+                            </div>
+                            <div class="what-people-say__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--latest blog-->
+    <div class="section section_latest-blog" id="section_latest-blog"> 
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_suptitle">Our stories</h3>
+                <h2 class="section_title">Latest blog</h2>
+            </div>
+            <div class="blog-items">
+                <div class="blog-items__item">
+                    <div class="blog-items__img-wrap">
+                        <img src="../images/blog/01.png" alt="">
+                        <div class="blog-data">
+                            15 
+                        <span class="blog-data-month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="blog-items__title">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="blog-items__text">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <hr class="blog-items-h">
+                    <div class="blog-items__block-info">
+                        <div class="blog-items__view">
+                            <div class="blog-items__icon">
+                                <img src="../images/blog/view.png" alt="">
+                            </div>
+                            <div class="blog-items__quantity">
+                                542
+                            </div>
+                        </div>
+                        <div class="blog-items__comments">
+                            <div class="blog-items__icon">
+                                <img src="../images/blog/comment.png" alt="">
+                            </div>
+                            <div class="blog-items__quantity">
+                                17
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-items__item">
+                    <div class="blog-items__img-wrap">
+                        <img src="../images/blog/02.png" alt="">
+                        <div class="blog-data">
+                            14 
+                        <span class="blog-data-month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="blog-items__title">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="blog-items__text">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <hr class="blog-items-h">
+                    <div class="blog-items__block-info">
+                        <div class="blog-items__view">
+                            <div class="blog-items__icon">
+                                <img src="../images/blog/view.png" alt="">
+                            </div>
+                            <div class="blog-items__quantity">
+                                992
+                            </div>
+                        </div>
+                        <div class="blog-items__comments">
+                            <div class="blog-items__icon">
+                                <img src="../images/blog/comment.png" alt="">
+                            </div>
+                            <div class="blog-items__quantity">
+                                42
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-items__item">
+                    <div class="blog-items__img-wrap">
+                        <img src="../images/blog/01.png" alt="">
+                        <div class="blog-data">
+                            12
+                        <span class="blog-data-month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="blog-items__title">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="blog-items__text">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <hr class="blog-items-h">
+                    <div class="blog-items__block-info">
+                        <div class="blog-items__view">
+                            <div class="blog-items__icon">
+                                <img src="../images/blog/view.png" alt="">
+                            </div>
+                            <div class="blog-items__quantity">
+                                1560
+                            </div>
+                        </div>
+                        <div class="blog-items__comments">
+                            <div class="blog-items__icon">
+                                <img src="../images/blog/comment.png" alt="">
+                            </div>
+                            <div class="blog-items__quantity">
+                                98
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>               
+        </div>
+    </div>  
+    <div class="section open-map" id="container__conclusion"></div>
+    <!--Conclusion-->
+    <div class="container container__conclusion">
+        <div class="conclusion">
+            <div class="col_wrap col_wrap__mogo">
+                <div class="col__mogo">
+                    <div class="col__mogo__title">
+                        MoGo
+                    </div>
+                    <div class="col__mogo__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </div>
+                    <div class="col__mogo__followers">
+                        <div class="col__mogo__quantity">
+                            15k
+                        </div>
+                        followers
+                    </div>
+                    <hr class="col__mogo-h">
+                    <div class="col__mogo__follow-us">
+                        <div class="follow-us__wrap follow-us__wrap__text">
+                            <div class="folow-us__text">Follow Us:</div>
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_01.jpg" alt="1" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_02.jpg" alt="2" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_03.jpg" alt="3" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_04.jpg" alt="4" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_05.jpg" alt="5" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_06.jpg" alt="6" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_07.jpg" alt="7" class="follow-us__img">
+                        </div>
+                        <div class="follow-us__wrap">
+                            <img src="../images/conclusion/icon_08.jpg" alt="8" class="follow-us__img">
+                        </div>
+                    </div>
+                    <form class="col__mogo__form">
+                        <div class="col__mogo__form-wrap">
+                            <input type="text" placeholder="Your Email..." class="col__mogo__form__input">
+                        </div>
+                        <div class="col__mogo__form-wrap">
+                            <button class="col__mogo__form__button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col_wrap col_wrap__blogs">
+                <div class="col__blogs-title">
+                    Blogs
+                </div>
+                <div class="col__blogs">
+                    <div class="col__blogs_item">
+                        <div class="col__blogs_item-wrap">
+                            <div class="col__blogs-pic">
+                                <img src="../images/conclusion/01.jpg" alt="1">
+                            </div>
+                        </div>
+                        <div class="col__blogs_item-wrap">
+                            <div class="col__blogs-text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing
+                            </div>
+                            <div class="col__blogs-date">
+                                Jan 9, 2016
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col__blogs_item">
+                        <div class="col__blogs_item-wrap">
+                            <div class="col__blogs-pic">
+                                <img src="../images/conclusion/02.jpg" alt="2">
+                            </div>
+                        </div>
+                        <div class="col__blogs_item-wrap">
+                            <div class="col__blogs-text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing
+                            </div>
+                            <div class="col__blogs-date">
+                                Jan 9, 2016
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col__blogs_item">
+                        <div class="col__blogs_item-wrap col__blogs_item-wrap-pic">
+                            <div class="col__blogs-pic">
+                                <img src="../images/conclusion/03.jpg" alt="3">
+                            </div>
+                        </div>
+                        <div class="col__blogs_item-wrap col__blogs_item-wrap-pic">
+                            <div class="col__blogs-text col__blogs_item-wrap-pic">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing
+                            </div>
+                            <div class="col__blogs-date">
+                                Jan 9, 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col_wrap col_wrap__instagram">
+                <div class="col__blogs-title">
+                    Instagram
+                </div>
+                <div class="col__instagram__item">
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/1.jpg" alt="1">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/2.jpg" alt="2">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/3.jpg" alt="3">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/4.jpg" alt="4">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/5.jpg" alt="6">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/6.jpg" alt="6">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/7.jpg" alt="7">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/8.jpg" alt="8">
+                    </div>
+                    <div class="col__instagram-wrap">
+                        <img src="../images/conclusion/9.jpg" alt="9">
+                    </div>
+                </div>
+                <div class="col__instagram_view">
+                    view more photos
+                </div>
+            </div>
+        </div>
+        <hr class="conclusion__hr">
+        <div class="footer__text">2021 MoGo</div>
+    </div>
     <script src="https://kit.fontawesome.com/7fe20b2913.js" crossorigin="anonymous"></script>
+    <script src="../jquery.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
