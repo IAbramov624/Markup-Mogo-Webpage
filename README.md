@@ -1,5 +1,5 @@
 # Markup-Mogo-Webpage
-Some webpage markup with adaptivity and jquery animations:
+Some webpage markup with adaptivity and jquery and css animations:
   1. Navigation works and iluminates when slide correspondes to;
   2. Header fixed all slides excludes first;
   3. "Hamburger menu" with active navigation on click when width less than 575 px;
