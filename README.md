@@ -5,4 +5,5 @@ Some webpage markup with adaptivity and jquery and css animations:
   3. "Hamburger menu" with active navigation on click when width less than 575 px;
   4. Craft scrollbars and accordions on the Service slide;
   5. Adaptivity for some width's;
-  6. Animations in css on the About and Our Team slides.
+  6. Animations in css on the About and Our Team slides;
+  7. Other features.
