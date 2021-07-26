@@ -13,6 +13,7 @@
 	<div class="container">
 		<div class="header_inner">
 			<div class="header_logo">MoGo</div>
+            <button class="btn-login">Log in</button>
             <nav class="nav"><link rel="preconnect" href="https://fonts.gstatic.com">
             	<a class="nav_link" href="#section_about" data-scroll=".section_about">ABOUT</a>
             	<a class="nav_link" href="#" data-scroll=".section_work">WORK</a>
@@ -27,6 +28,54 @@
 		</div>
 	</div>
 </header>
+
+<div class="avthorized-window hide">
+    <form action="#" class="authorized-form">
+        <div class="authorized-form__item">
+            <div class="authorized__status">
+                <div class="authorized-form__title">You are not authorized</div>
+                <button class="button-close button-close-authorized">
+                    <div class="button-item"></div>
+                </button>
+            </div>
+            
+        </div>
+        <div class="authorized-form__item">
+            <input type="text" name="login" required placeholder="Log in" maxlength="3" class="authorized__input authorized__login">
+            <input type="password" name="password" required placeholder="Password" maxlength="3" class="authorized__input authorized__password">
+            <div class="authorized-form__checkbox">
+                <input type="checkbox" name="checkbox" class="authorized__checkbox" id="authorized__checkbox">
+                <label class="checkbox__text" for="authorized__checkbox">Remember me</label>
+            </div>
+    
+        </div>
+        <div class="authorized-form__item">
+            <button class="authorized__btn">Submit</button>
+        </div>
+    </form>
+</div>
+
+<div class="learn-more-window hide">
+    <form action="#" class="learn-more-form">
+        <div class="authorized-form__item">
+            <div class="authorized__status">
+                <div class="authorized-form__title">Learn more about our company</div>
+                <button class="button-close button-close-learn">
+                    <div class="button-item"></div>
+                </button>
+            </div>
+            
+        </div>
+        <div class="authorized-form__item">
+            <label for="input_tel" class="label-learn-more">leave us your phone</label>
+            <input id="input_tel" type="tel" name="tel" required value="+ 7" maxlength="12" class="authorized__input authorized__login">
+            <div class="authorized__input learn-more__status label-learn-more"></div>
+        </div>
+        <div class="authorized-form__item">
+            <button class="authorized__btn btn-learn">Submit</button>
+        </div>
+    </form>
+</div>
 
 <body>
 	<div class="intro"> 
@@ -205,7 +254,30 @@
 
             <div class="what-we-do">
                 <div class="what-we-do__photo">
-                    <img src="../images/service/service.jpg" alt="">
+                    <div class="slider-item">
+                        <img src="../images/service/service1.jpg" alt="1">
+                    </div>
+                    <div class="slider-item">
+                        <img src="../images/service/service2.jpg" alt="2">
+                    </div>
+                    <div class="slider-item">
+                        <img src="../images/service/service3.jpg" alt="3">
+                    </div>
+
+                    <div class="prev">
+                        <div class="prev-substrate"></div>
+                        <div class="prev-button"></div>
+                    </div>
+                    <div class="next">
+                        <div class="next-substrate"></div>
+                        <div class="next-button"></div>
+                    </div>
+
+                    <div class="dots">
+                        <div class="dots-item"></div>
+                        <div class="dots-item"></div>
+                        <div class="dots-item"></div>
+                    </div>
                 </div>
                 <div class="what-we-do__items">
                     <div class="what-we-do__item">
@@ -655,8 +727,30 @@
         </div>
     </div>  
     <div class="section open-map" id="container__conclusion"></div>
+    <div class="section section-timer" >
+        <div class="container">
+            <div class="sales">Sales!</div>
+            <div class="timer">
+                <div class="timer-item">
+                    <span class="days">00</span>
+                    <span>DAY(S),</span>
+                </div>
+                <div class="timer-item">
+                    <span class="hours">00</span>
+                    <span> :</span>
+                </div>
+                <div class="timer-item">
+                    <span class="minutes">00</span>
+                    <span>:</span>
+                </div>
+                <div class="timer-item">
+                    <div class="seconds">00</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Conclusion-->
-    <div class="container container__conclusion">
+    <div class="container container__conclusion">        
         <div class="conclusion">
             <div class="col_wrap col_wrap__mogo">
                 <div class="col__mogo">
